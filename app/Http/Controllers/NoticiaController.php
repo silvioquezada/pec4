@@ -37,7 +37,8 @@ class NoticiaController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $noticia=Noticia::find($id);
+        return view('noticia', compact('noticia'));
     }
 
     /**

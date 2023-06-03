@@ -6,22 +6,16 @@
 
   <div class="boxitemspresentacion">
         <div class="boxitemspresentacionfondo">
-            <p class="textosubtitulo">{{ $noticia->titulo }}</p>
-            <p class="textosm">{{ $noticia->fecha_publicacion }}</p>
+            <p class="textosubtitulo"><a class="textoenlace" href="noticia/<?= $noticia->id; ?>">{{ $noticia->titulo }}</a></p>
             <div class="boxpresentacion">
                 <img src="<?= $noticia->imagen; ?>" class="fotocardpresentacion" alt="Imagen <?= $noticia->titulo; ?>">
-                <div>{{ $noticia->descripcion }}</div>
             </div>
-            <a class="textoenlace" href="post.php?id=<?= $noticia->id; ?>">Leer</a>
+            <p class="textosm">{{ $noticia->fecha_publicacion }}</p>
         </div>
     </div>
 
 @endforeach
 
 </article>
-
-
-
-
 
 @endsection

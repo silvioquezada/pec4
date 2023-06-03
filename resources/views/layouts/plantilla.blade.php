@@ -7,13 +7,13 @@
         <meta name="author" content="Silvio Quezada">
         <meta name="description" content="PEC 3 de la asignatura Desarrollo back-end con PHP">
         <meta name="viewport" content="width=device-width">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         
       </head>
       <body class="contenedor">
         <header id="encabezado">
           <div class="boxlogo">
-            <a href="index.html"><img src="img/logo.png" class="logoencabezado" alt="Imagen Logo"></a>
+            <a href="index.html"><img src="{{ asset('img/logo.png') }}" class="logoencabezado" alt="Imagen Logo"></a>
             <span id="titulologo"><a href="index.html">ONGCA</a></span>
           </div>
         </header>
@@ -27,27 +27,23 @@
 
           <div id="menu" class="navegacion">
             <ul>
-              <li class="link_menu"><a href="index.html">Home</a></li>
-              <li class="link_menu"><a href="categorias.html">Api_Noticias</a></li>
-              <li class="link_menu"><a href="categorias.html">Api_Noticia</a></li>
-
+              <li class="link_menu"><a href="">Home</a></li>
+              <li class="link_menu"><a href="">Api_Noticias</a></li>
+              <li class="link_menu"><a href="">Api_Noticia</a></li>
 
               @if (Route::has('login'))
                 
                     @auth
-                        <a href="{{ url('/dashboard') }}"class="link_menu">Dashboard</a>
+                    <li class="link_menu"><a href="{{ url('/dashboard') }}"class="link_menu">Dashboard</a></li>
                     @else
-                        <a href="{{ route('login') }}"class="link_menu">Log in</a>
+                    <li class="link_menu"><a href="{{ route('login') }}"class="link_menu">Log in</a></li>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="link_menu">Register</a>
+                        <li class="link_menu"><a href="{{ route('register') }}" class="link_menu">Register</a></li>
                         @endif
                     @endauth
             
               @endif
-
-
-
 
             </ul>
           </div>
@@ -65,7 +61,7 @@
         
         <footer>
           <div bclass="boxlogo">
-            <img src="img/logo.png" class="logoencabezado" alt="Imagen Logo">
+            <img src="{{ asset('img/logo.png') }}" class="logoencabezado" alt="Imagen Logo">
             <span id="titulologopie"><a href="index.html">ONGCA</a></span>
           </div>
           <div class="textomd">

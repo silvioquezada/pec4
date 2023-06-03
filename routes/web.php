@@ -23,8 +23,10 @@ Route::get('/', function () {
 */
 
 Route::get(
-    '/',
-    [NoticiaController::class, 'index']);
+    '/', [NoticiaController::class, 'index']);
+
+Route::get(
+    '/noticia/{id}', [NoticiaController::class, 'show']);
 
 Route::get('/welcome', function () {
     return view('welcome');
