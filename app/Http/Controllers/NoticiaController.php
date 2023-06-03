@@ -12,7 +12,7 @@ class NoticiaController extends Controller
      */
     public function index()
     {
-        $noticias=Noticia::all();
+        $noticias=Noticia::limit(5)->get();
         return view('home', compact('noticias'));
     }
 

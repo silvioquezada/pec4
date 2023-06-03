@@ -1,21 +1,27 @@
 @extends('layouts.plantilla')
 @section('contenidoPrincipal')
 <article class="contenedorcontenido">
-    <div>
-        <h1 class="textotitulo">Lugares Turísticos en El Oro</h1>
+   
+@foreach($noticias as $noticia)
 
-        <p class="textocontenido">Te guiamos por El Oro - Ecuador, podrás encontrar entre sus más notables atractivos turísticos de carácter natural como histórico y cultural todo lo que esta dorada provincia puede ofrecerte y que visitarla debe estar en tu lista de planes.</p>
+  <div class="boxitemspresentacion">
+        <div class="boxitemspresentacionfondo">
+            <p class="textosubtitulo">{{ $noticia->titulo }}</p>
+            <p class="textosm">{{ $noticia->fecha_publicacion }}</p>
+            <div class="boxpresentacion">
+                <img src="<?= $noticia->imagen; ?>" class="fotocardpresentacion" alt="Imagen <?= $noticia->titulo; ?>">
+                <div>{{ $noticia->descripcion }}</div>
+            </div>
+            <a class="textoenlace" href="post.php?id=<?= $noticia->id; ?>">Leer</a>
+        </div>
     </div>
+
+@endforeach
+
 </article>
 
-<table class="default">
-@foreach($noticias as $noticia)
-  <tr>
-    <td>{{ $noticia->id }}</td>
-    <td>{{ $noticia->apellido }}</td>
-    <td>{{ $noticia->nombre }}</td>
-  </tr>
-@endforeach
-</table>
+
+
+
 
 @endsection
