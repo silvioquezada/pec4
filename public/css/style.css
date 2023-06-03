@@ -1,0 +1,644 @@
+@font-face{
+    font-family:'Inter';
+    src:url(../fonts/Inter-VariableFont_slnt,wght.ttf);
+    font-style: normal;
+    font-weight: 400 700;
+}
+
+body{
+    padding-top: 0%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+a {
+    font-weight: 700;
+    text-decoration:none;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-decoration:none;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+a:hover{
+    color: rgb(245, 157, 35);
+}
+
+.textoenlace a:hover {
+    color: rgb(245, 157, 35);
+}
+
+/*Inicia estilo de encabezado de página*/
+header{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #008c98;
+    height: 100%;
+}
+
+.logoencabezado{
+    height: 18vh;
+    width: 18vh;
+    object-fit: contain;
+}
+/*Termina estilo de encabezado de página*/
+
+/*Inicia estilo de menú de página*/
+nav{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(93, 95, 121);
+    text-align: left;
+    height: 100%;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu_hamburguesa{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+#menu:not(.visible){
+    display: none;
+}
+
+#menu.visible{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: -30px;
+  background-color: #008c98;
+}
+
+#titulologo:not(.visible){
+    display: none;
+}
+
+.link_menu{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+/*Termina estilo de menú de página*/
+
+/*Inicia estilo de Footer*/
+footer{
+    padding-top: 1%;
+    color: rgb(255, 255, 255);
+    background-color: #008c98;
+    text-align: center;
+    display: block;
+}
+
+footer a{
+    color: rgb(255, 255, 255);
+}
+/*Termina estilo de Footer*/
+
+/*Inicia Contenedor de Sección*/
+.contenedorcontenido{
+    margin: 1%;
+    padding: 1%;
+}
+/*Termina Contenedor de Sección*/
+
+/*Inicia textos*/
+.textotitulo{
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.textosubtitulo{
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.textomd{
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+}
+
+.textosm{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.textolink{
+    color: #333333;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.textomd div{
+    padding-top: 0.50%;
+    padding-bottom: 0.50%;
+}
+
+.textoenlace{
+    color: #333333;
+}
+/*Finaliza textos*/
+
+/*
+.iconos{
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    object-position: bottom;
+}
+*/
+
+p {
+    text-align: justify;
+}
+
+#titulologopie:not(.visible){
+    display: block;
+}
+
+/*
+Inicia Card
+*/
+.boxitemspresentacion{
+ 
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 40px;
+
+}
+
+.boxitemspresentacionfondo{
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    padding: 1%;
+}
+
+.fotocardpresentacion{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.boxitemspresentacion span{
+    margin: 8px;
+    color: rgb(245, 157, 35);
+    text-decoration: line-through  15px;
+}
+/*
+Termina Card
+*/
+
+.seccionboxfotodetalle
+{
+    text-align: center;
+}
+
+.fotosecciondetalle
+{
+    height: auto;
+    width: 80%;
+}
+
+.oculto
+{
+    display:none;
+}
+
+button
+{
+    color: #ffffff;
+    background-color: #008c98;
+    border-radius: 5px;
+    padding: 10px 2em;
+}
+
+.formulario
+{
+    width: 75%;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    padding: 1%;
+}
+
+.contendorformulario
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div > label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 95%;
+}
+
+div span{
+    color: #d90000;
+}
+
+.colorblanco{
+    color: rgb(0, 0, 0);
+    padding-right: 1%;
+}
+
+
+@media screen and (min-width: 400px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(8, minmax(0,1fr));
+        gap: 0%;
+    }
+
+    #menu:not(.visible){
+        display: none;
+    }
+    
+    #menu.visible{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 70%;
+        top: -30px;
+        background-color: #008c98;
+    }
+
+    #titulologo:not(.visible){
+        display: none;
+    }
+      
+    .link_menu{
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    header {
+        grid-column: 1 / 9;
+        grid-row: 1;
+
+        text-align: left;
+        height: 100%;
+    }
+    
+    nav {
+        background-color: #008c98;
+        grid-column: 1 / 9;
+        grid-row: 2;
+        height: 100%;
+    }
+    
+    main {
+        grid-column: 1 / 9;
+        grid-row: 3;
+    }
+    
+    footer {
+        grid-column: 1 / 9;
+        grid-row: 4;
+    }
+
+    nav, header, main{
+    margin: 0;
+    padding: 0;
+    }
+
+     /*Inicia Contenedor de Sección*/
+    .contenedorcontenido{
+        margin: 1%;
+        padding: 1%;
+    }
+    /*Termina Contenedor de Sección*/
+
+     /*Inicia Textos*/
+    .textotitulo{
+        color: #333333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+    /*Finaliza Textos*/
+
+    #titulologopie:not(.visible){
+        display: block;
+    }
+
+    /*
+    Inicia Card
+    */
+    .boxitemspresentacion{
+ 
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 40px;
+    
+    }
+
+    .boxitemspresentacionfondo{
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        padding: 1%;
+    }
+    
+    .fotocardpresentacion{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    /*
+    Termina Card
+    */
+
+    .textoenlace a:hover {
+        color: rgb(245, 157, 35);
+    }
+
+    .seccionboxfotodetalle
+    {
+        text-align: center;
+    }
+
+    .oculto{
+        display:none;
+    }
+
+    .formulario
+    {
+        width: 70%;
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        padding: 1%;
+    }
+
+    .contendorformulario
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input{
+        width: 95%;
+    }
+
+    .colorblanco{
+        color: rgb(255, 255, 255);
+        padding-right: 1%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0,1fr));
+        gap:0%;
+    }
+    
+    #enlace_menu:not(.visible){
+        display: none;
+    }
+
+    #menu:not(.visible){
+        display: block;
+    }
+
+    #titulologo:not(.visible){
+        display: block;
+    }
+
+    header {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        text-align: left;
+        height: 20vh;
+        align-items: center;
+    }
+
+    .boxlogo {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+    .boxlogo, a, a:hover {
+        color: #ffffff;
+    }
+    
+    nav {
+        background-color: #008c98;
+
+        grid-column: 4 / 13;
+        grid-row: 1;
+        
+       
+        
+        display: flex;
+        flex-direction: column;
+        /*
+        flex-flow: row wrap;
+        justify-content: end;
+        text-align: right;
+        align-items: center;
+        */
+        text-align: right;
+        height: 20vh;
+    }
+
+    .navegacion{
+        padding-right: 1%;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        text-decoration:none;
+    }
+    
+    main {
+        grid-column: 1 / 13;
+        grid-row: 2;
+    }
+    
+    footer {
+        grid-column: 1 / 13;
+        grid-row: 3;
+    }
+
+    nav form{
+        display: block;
+        padding: 1%;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        padding-left: 12px;
+    }
+
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: end;
+    }
+    
+    /*Inicia textotitulo de articulo*/
+    .textotitulo{
+        color: #333333;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 1%;
+        text-align: center;
+        font-size: 30px;
+    }
+    /*Termina textotitulo de articulo*/
+
+    /*Inicia Contenedor de Sección*/
+    .contenedorcontenido{
+        margin: 1%;
+        padding-top: 0;
+    }
+    /*Termina Contenedor de Sección*/
+
+    .textocontenido{
+        margin-top: 0.5%;
+    }
+
+    #titulologopie:not(.visible){
+        display: block;
+    }
+
+    /*
+    Inicia Card
+    */
+    .boxitemspresentacion{
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+
+    .boxitemspresentacionfondo{
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        padding: 1%;
+    }
+
+    .boxpresentacion{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1%;
+        align-items: center;
+    }
+    
+    .fotocardpresentacion{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    /*
+    Termina Card
+    */
+
+    a:hover {
+        color: rgb(245, 157, 35);
+    }
+
+    .boxdetalle{
+        background-color: rgb(255, 255, 255);
+        margin-top: 3%;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-bottom: 3%;
+    }
+
+    .seccionboxfotodetalle
+    {
+        text-align: center;
+    }
+
+    .fotosecciondetalle
+    {
+        height: 300px;
+        width: 80%;
+    }
+
+    .oculto{
+        display:none;
+    }
+
+    .formulario
+    {
+        width: 40%;
+        box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+        padding: 1%;
+    }
+
+    .contendorformulario
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input{
+        width: 95%;
+    }
+
+    .colorblanco{
+        color: rgb(255, 255, 255);
+        padding-right: 1%;
+    }
+}

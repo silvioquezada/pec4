@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\NoticiaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
+    return view('home', [NoticiaController::class, 'index']);
+});
+*/
+
+Route::get(
+    '/',
+    [NoticiaController::class, 'index']);
+
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
